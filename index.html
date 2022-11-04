@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title> PRIMEIROS PASSOS COM HTML </title>
+    </head>
+    <body> 
+        <h1 id="inicio"><strong>Aprendendo HTML na prática</strong></h1>
+        <hr />
+        <h2>Indice</h2>
+        <ul>
+            <li><a href="#ferramentas">Ferramentas</li></a>
+            <li><a href="#estrutura">Estrutura básica do HTML</li></a>
+            <li><a href="#tags">Tags</li></a>
+            <li><a href="#atributo">Atributo das Tags</li></a>
+            <li><a href="#textos">Textos</li></a>
+            <li><a href="#listas">Listas</li></a>
+            <li><a href="#links">Links</li></a>
+        </ul>
+        <h2 id="ferramentas">Ferramentas</h2> 
+        <small><a href="#inicio">(Voltar)</small></a>
+        <p> Para desenvolver uma página html você pode utilizar qualquer editor de textos simples, 
+            porém nesse curso foi utilizado o <a href="https://code.visualstudio.com/download" title="Clique aqui" target="_blank">Visual Studio Code</a>,
+            que inclusive pode ser acessado para download clicando sobre o nome do mesmo. Ele é um editor de código-fonte desenvolvido pela Microsoft para Windows, 
+            Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, 
+            snippets e refatoração de código. Ele é customizável, permitindo que os usuários possam mudar o tema do editor, teclas de atalho e preferências. 
+            Ele é um software livre e de código aberto.
+        </p>
+        <img src="vscode.JPG" height="400"/> <img src="liveserver.JPG" height="400"/>
+        <p> Após o download, o próximo passo é ir na aba de extensões do VS Code e baixar o <strong>Live Server</strong>, pois ele servirá como o navegador para o site.
+            Depois disso o ideal seria criar uma pasta no seu computador em que conterá todo o conteúdo do site, agora sim podemos começar.
+        </p>                    
+        <p><strong><i>DICA:</i></strong> Para conseguir ver o código de um site em que você está, basta teclar <strong>F12</strong> e a guia abaixo irá se abrir, assim você pode utilizar a ferramenta
+        <strong>Inspetor de Elementos</strong> para olhar cada elemento presente no site.</p><br>
+        <img src="inspetor.jpg" height="400"/>  
+        <h2 id="estrutura">Estrutura básica do HTML</h2>
+        <small><a href="#inicio">(Voltar)</small></a>
+        <p>O HTML é formado por tags principais:</p>
+        <img src="corpo.jpg" height="400"/><br> 
+        <ul> 
+            <li><strong>< html>< /html></strong> – Esta tag é o elemento básico da estrutura do HTML. Assim sendo, ela conterá todos os elementos do seu documento. Todo documento HTML deve iniciar e finalizar com essa tag;</li>
+            <li><strong>< head>< /head></strong> – Essa tag delimita o cabeçalho do documento. Não possui nenhum valor visível, porém é capaz de transmitir ao navegador diversas informações muito úteis e essenciais a uma boa apresentação do seu documento HTML;</li>
+            <li><strong>< title>< /title></strong> - Essa tag define o título da sua página, o nome que aparecerá na sua aba, janela ou guia. Por esta razão, a tag >title> é de grande importância para o SEO;</li>
+            <li><strong>< body>< /body></strong> – Finalmente, a tag que representa o corpo do documento. Em síntese, é nessa tag que todos os elementos visíveis do seu site devem ser inseridos.</li>
+        </ul>
+        <h2 id="tags">Tags</h2>
+        <small><a href="#inicio">(Voltar)</small></a>
+        <p>As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em HTML, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página.
+            A principal característica das tags é estarem sempre dentro dos sinais de chevron (sinal de “maior que” e “menor que”), ou seja: < >.
+            As tags HTML são divididas em dois tipos: as que precisam de fechamento e as que não precisam de fechamento. As tags que precisam de fechamento possuem a sintaxe < tag>< /tag>, já as que não precisam de fechamento possuem como estrutura <tag/>.
+            Além disso, uma mesma tag pode receber um ou mais atributos, que possuirá um valor que modifica sua estrutura ou funcionalidade.</p>
+       <h2 id="atributo">Atributos das tags</h2>
+       <small><a href="#inicio">(Voltar)</small></a>
+       <p>Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento.</p>
+        <ul>
+            <li><strong> class=”…“</strong> – Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);</li>
+            <li><strong> id=”…“</strong> – Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);</li>
+            <li><strong> title=”…”</strong> – Define o título do elemento;</li>
+            <li><strong> width=”…”</strong> – Define uma largura para o elemento;</li>
+            <li><strong> height=”…”</strong> – Define uma altura para o elemento.</li>
+            <li><strong> < img></strong> - Essa tag não necessita de fechamento, serve para incluir uma imagem ao seu texto. A partir dessa tag, utilizamos o atributo src=”” onde deve ser digitado o local em que a imagem se encontra.</li>
+        </ul>
+       </p>
+       <h2 id="textos">Textos</h2>
+       <small><a href="#inicio">(Voltar)</small></a>
+       <p>As tags de texto definem textos, estilos de fonte, parágrafos, spans, quebras de linhas, etc.</p>
+       <ul>
+        <li><strong>< h1> até < /h6></strong> - As tags de título possuem valor semântico, variando entre seis níveis hierárquicos.</li>
+        <li><strong>< mark></strong> - Tag para marcar uma palavra;</li>
+        <li><strong>< small></strong> - Tag para deixar uma palavra pequena;</li>
+        <li><strong>< sub></strong> - Tag para escrever uma palavra para baixo;</li>
+        <li><strong>< sup</strong> - Tag para escrever uma palavra para cima;</li>
+        <li><strong>< blockquote></strong> - Tag para escrever uma citação;</li>
+        <li><strong>< abbr></strong> - Define uma abreviação ou um acrônimo;</li>
+        <li><strong>< font></strong> - Foi usada no HTML 4 para especificar a face da fonte, o tamanho da fonte e a cor do texto;</li>
+        <li><strong>< del></strong> - Um texto com uma parte excluída e uma nova parte inserida;</li>
+        <li><strong>< p>< /p></strong> - Principal tag de texto, compõe um parágrafo;</li>
+        <li><strong>< span>< /span></strong> – Apesar de ter uma funcionalidade e características parecidas com os parágrafos, costumam ser utilizadas apenas para pequenas informações, como legendas de um formulário, legendas de uma imagem, etc. Também pode ser utilizada para formar um container;</li>
+        <li><strong>< pre>< /pre></strong> – Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;</li>
+        <li><b>< b>< /b></b> – Transforma o conteúdo em negrito;</li>
+        <li><b>< i>< /i></b> – Transforma o conteúdo em itálico;</li>
+        <li><b>< br></b> – Essa tag não necessita de fechamento, ela executa a função de quebra de linha.</li>
+        <li><b>< hr/></b> – Essa tag não necessita de fechamento, ela forma uma linha horizontal.</li>
+       </ul>
+       <h2 id="listas">Listas</h2>
+       <small><a href="#inicio">(Voltar)</small></a>
+       <p>Para poder criar uma lista, podemos utilizar uma lista ordenada, a partir das tags < ol>< /ol>, ou uma lista não ordenada, a partir das tags < ul>< /ul>. Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags < li>< /li>.</p>
+       <p><b>Minha lista ordenada:</b></p>
+       < ol><br>
+         < li>item 1< /li><br>
+         < li>item 2< /li><br>
+         < li>item 3< /li><br>
+       < /ol><br>
+       <p><b>Minha lista não ordenada:</b></p>
+       < ul><br>
+         < li>item 1< /li><br>
+         < li>item 2< /li><br>
+         < li>item 3< /li><br>
+       < /ul><br>
+       <h2 id="links">Links</h2>
+       <small><a href="#inicio">(Voltar)</small></a>
+       <p>A tag de link HTML é responsável que faz a ligação entre um documento e outro, sendo ele da mesma página ou de uma página de outro domínio. Esse elemento garantiu que o HTML se destacasse, e moldou a internet da forma que ela é hoje! Portanto, é o principal fundamento que forma a web.
+        Para realizar um link, podemos chamar as tags < a>< /a> com o atributo href. </p>
+        <p>Exemplo: < p> Para acessar o Google, < a href="https://www.google.com">clique aqui.< /a>< /p></p>
+        <p>Para acessar o Google, <a href="https://www.google.com" title="clique aqui" target="_blank">clique aqui</a></p>
+        <h2>Referências</h2>
+        <small><a href="#inicio">(Voltar)</small></a>
+
+        <ul> 
+            <li><a href="https://www.treinaweb.com.br/blog/vs-code-o-que-e-e-por-que-voce-deve-usar" title="clique aqui" target="_blank">treinaweb</a></li>
+            <li><a href="https://www.homehost.com.br/blog/tutoriais/tags-html/" title="clique aqui" target="_blank">homehost</a></li>
+            <li><a href="https://www.w3schools.com/tags/default.asp" title="clique aqui" target="_blank">w3schools</a></li>
+        </ul>
+    </body>
+</html>
